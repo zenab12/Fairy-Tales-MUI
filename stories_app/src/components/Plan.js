@@ -71,7 +71,7 @@ const Plan = () => {
                     {
                         plans_content.map(
                             (item, index) =>
-                                <Grid key={index} item xs={10} md={5} lg={3} sx={{ alignSelf: 'center' }}>
+                                <Grid key={index} item xs={12} md={5} lg={3} sx={{ alignSelf: 'center' }}>
                                     <Card variant='outlined'>
                                         <Box sx={{ display: 'flex', flexDirection: 'column', p: '20px 0px' }}>
                                             <CardContent sx={{ p: 0, flex: '1 0 auto', display: 'flex', flexDirection: 'column', gap: 3, textAlign: 'center' }}>
