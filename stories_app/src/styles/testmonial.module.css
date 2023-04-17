@@ -1,0 +1,35 @@
+.testimonialContainer {
+    overflow: hidden;
+  }
+  
+  
+.testimonial {
+    opacity: .7;
+    transition: opacity 0.5s ease-in-out;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .testimonial.active {
+    opacity: 1;
+    animation: slideIn 2s ease-in-out forwards;
+    animation-delay: 0.1s;
+  
+  }
+  
+  
+  /* CSS Animation */
+  @keyframes slideIn {
+    0% {transform: translateY(50%); opacity: 0;}
+    100% {transform: translateY(0%); opacity: 1;}
+  }
+  /* 
+  .testimonial:nth-child(odd) {
+    animation: slideIn 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  .testimonial:nth-child(even) {
+    animation: slideIn 0.5s ease-in-out forwards;
+    animation-delay: 1s;
+  } */

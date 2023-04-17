@@ -9,6 +9,9 @@ import Footer from '@/components/Footer';
 import Services from '@/components/Services';
 import Subscribe from '@/components/Subscribe';
 import Sponsors from '@/components/Sponsors';
+import Testominals from '@/components/Testmonial';
+import Plan from '@/components/Plan';
+import About from '@/components/Aboutus';
 
 export default function Home() {
   return (
@@ -21,7 +24,9 @@ export default function Home() {
       </Head>
       <NavBar/>
       <Header/>
-     
+      <About/>
+      <Plan/>
+      <Testominals/>
       <Sponsors/>
       <Subscribe/>
       <Services/>

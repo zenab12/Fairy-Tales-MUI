@@ -157,3 +157,8 @@ img.active
 .sponsor-slide.active {
   opacity: 1;
 }
+
+.even 
+{
+  background-color: rgba(255, 171, 225, 0.16)
+}
