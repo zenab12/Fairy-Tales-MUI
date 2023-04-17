@@ -47,7 +47,7 @@ About us                </Typography>
                     {
                         features.map(
                             (item, index) =>
-                                <Grid key={index} item xs={11} md={4} lg={3} sx={{ alignSelf: 'center' }}>
+                                <Grid key={index} item xs={10} md={4} lg={3} sx={{ alignSelf: 'center' }}>
                                     <Card  sx={{boxShadow:'0px 0px 15px #eee', borderRadius:'200px 200px 0px 0px'}}>
                                         <Box sx={{ display: 'flex', flexDirection: 'column', p: '40px 0px 30px' }}>
                                             <CardContent sx={{ p: 0, flex: '1 0 auto', display: 'flex', flexDirection: 'column', gap: 2, p:4 }}>
