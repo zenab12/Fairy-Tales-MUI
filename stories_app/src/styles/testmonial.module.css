@@ -6,10 +6,6 @@
 .testimonial {
     opacity: .7;
     transition: opacity 0.5s ease-in-out;
-<<<<<<< HEAD
-=======
-    max-width: 500px;
->>>>>>> df436132c7a017109172c5d2bedcf1dc174f8912
     text-align: left;
   }
   
