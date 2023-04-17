@@ -52,7 +52,7 @@ const Plan = () => {
     ]
     return (
         <Box sx={{
-            background: "#fff", p: { xs: 10, md: 8 },
+            background: "#fff", p: { xs: 2, md: 8 } ,pb:10,
             background: 'rgba(255, 171, 225, 0.16)',
             borderRadius: '0px 0px 0px 275px',
 
