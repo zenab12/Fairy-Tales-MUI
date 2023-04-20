@@ -8,7 +8,7 @@ import { useState,useEffect } from 'react';
 import styles from '@/styles/testmonial.module.css'
 
 const Testominals = () => {
-    const images = ['emilie.svg', 'https://th.bing.com/th/id/OIP.W7D--8J4JRQp_uwHoyxEQwHaHa?w=182&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7'];
+    const images = ['emilie.svg', 'jo.svg'];
     const names = ['emellia clark', 'june seif'];
     const content = [{ 'duration': 'Written 2022', 'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est et at faucibus lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est et at faucibus lorem.' }, { 'duration': 'Written 2021', 'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est et at faucibus lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est et at faucibus lorem. ' }];
     const [currentSlide, setCurrentSlide] = useState(0);
