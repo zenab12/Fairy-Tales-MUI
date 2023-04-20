@@ -1,5 +1,5 @@
 import { Typography, Container, Box } from "@mui/material";
-import { useState } from 'react';
+import { useState } from "react";
 import { useEffect, useRef } from "react";
 import { Grid } from "@mui/material";
 
@@ -12,7 +12,6 @@ const Sponsors = () => {
     { src: "sp2.svg", alt: "Sponsor 4" },
     { src: "sp3.svg", alt: "Sponsor 5" },
     { src: "sp4.svg", alt: "Sponsor 6" },
-
   ];
 
   useEffect(() => {
@@ -29,31 +28,37 @@ const Sponsors = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-
   return (
-
-    <Box sx={{ p: '20px 0px', textAlign: 'center' }}>
+    <Box sx={{ p: "20px 0px", textAlign: "center" }}>
       <Container maxWidth="xl">
-        <Typography variant="h4" component={'h4'} color="text.secondary">
+        <Typography variant="h4" component={"h4"} color="text.secondary">
           trusted by
         </Typography>
 
-        <Grid container spacing={1} sx={{ mt: 5, mb: 5 }} className="sponsor-carousel">
+        <Grid
+          container
+          spacing={1}
+          sx={{ mt: 5, mb: 5 }}
+          className="sponsor-carousel"
+        >
           {slides.map((slide, index) => (
-            <Grid item xs={6} md={4} lg={2}
+            <Grid
+              item
+              xs={6}
+              md={4}
+              lg={2}
               key={index}
-              className={`sponsor-slide ${index === currentSlide ? "active" : ""
-                }`}
+              className={`sponsor-slide ${
+                index === currentSlide ? "active" : ""
+              }`}
             >
               <img src={slide.src} alt={slide.alt} />
             </Grid>
           ))}
         </Grid>
-
       </Container>
     </Box>
-
   );
-}
+};
 
 export default Sponsors;

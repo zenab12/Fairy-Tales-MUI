@@ -1,19 +1,44 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import { Typography,Button } from '@mui/material';
-import NavBar from '@/components/NavBar';
-import Header from '@/components/header';
-import Footer from '@/components/Footer';
-import Services from '@/components/Services';
-import Subscribe from '@/components/Subscribe';
-import Sponsors from '@/components/Sponsors';
-import Testominals from '@/components/Testmonial';
-import Plan from '@/components/Plan';
-import About from '@/components/Aboutus';
-
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+import { Typography, Button } from "@mui/material";
+import NavBar from "@/components/NavBar";
+import Header from "@/components/header";
+import Footer from "@/components/Footer";
+import Services from "@/components/Services";
+import Subscribe from "@/components/Subscribe";
+import Sponsors from "@/components/Sponsors";
+import Testominals from "@/components/Testmonial";
+import Plan from "@/components/Plan";
+import About from "@/components/Aboutus";
+import Stories from "@/components/Stories";
+import { styled } from "@mui/material/styles";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 export default function Home() {
+  const useStyles = styled(Button)(({ theme }) => ({
+    position: "fixed",
+    bottom: theme.spacing(5),
+    right: theme.spacing(5),
+    width: "20px",
+    height: "20px",
+    display: "block",
+    bottom: "100px",
+    position: "fixed",
+    background: "secondary",
+    right: "25px",
+    cursor: "pointer",
+  }));
+
+  // const buttonstyle = useStyles();
+
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <Head>
@@ -22,15 +47,33 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavBar/>
-      <Header/>
-      <About/>
-      <Plan/>
-      <Testominals/>
-      <Sponsors/>
-      <Subscribe/>
-      <Services/>
-      <Footer/>
+      <NavBar />
+      <Header />
+      <About />
+      <Stories />
+      <Plan />
+      <Testominals />
+      <Sponsors />
+      <Subscribe />
+      <Services />
+      <Footer />
+      {/* <Button
+        onClick={handleClick}
+        variant="contained"
+        color="primary"
+        size="large"
+        startIcon={<KeyboardArrowUpIcon />}
+        sx={{
+          width: "20px",
+          height: "20px",
+          display: "block",
+          bottom: "100px",
+          position: "fixed",
+          background: "orange",
+          right: "25px",
+          cursor: "pointer",
+        }}
+      ></Button> */}
     </>
-  )
+  );
 }
