@@ -43,7 +43,7 @@ const Testominals = () => {
                     <Box sx={{ display: 'flex', flexDirection: 'column',p:'5px ' }}>
                       <CardContent sx={{ flex: '1 0 auto' }}>
                         <Box sx={{ display: 'flex',gap:1,alignItems:'center',pb:1 }}>
-                        <Image width={50} height={50} src={images[index]} />
+                        <img width={50} height={50} src={images[index]} alt={images[index]} />
                         <Typography component="h5" variant="h6">
                           {names[index]}
                         </Typography>
