@@ -301,7 +301,7 @@ const Stories = (props) => {
                     boxShadow: "0px 0px 15px #eee",
                     borderRadius: "200px 200px 0px 0px",
                   }}
-                  xs={6} md={4}
+                  xs={5} md={4}
                 >
                   <Box
                     sx={{
