@@ -282,7 +282,7 @@ const Stories = (props) => {
             sx={{
               justifyContent: "center",
               alignItems: "center",
-              ml:{xs:'20px',md:0}
+              ml:{xs:'10px',md:0}
             }}
           >
             {itemData.map((item, ind) =>
